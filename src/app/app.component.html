@@ -1,3 +1,13 @@
-<div *ngFor="let num in counter">
-  <p *ngIf="num % 2 == 0">{{num}}</p>
+<h2>Numeri pari</h2>
+<div *ngFor="let num of counter">
+  <h3 *ngIf="num % 2 == 0">{{num}}</h3>
 </div>
+<br>
+
+<h2>Numeri dispari</h2>
+<div *ngFor="let num of counter">
+  <h3 *ngIf="num % 2 != 0">{{num}}</h3>
+</div>
+
+<app-hero-section [primoTesto] = "mainText"></app-hero-section>
+<app-hero-section [secondoTesto] = "secondText"></app-hero-section>
